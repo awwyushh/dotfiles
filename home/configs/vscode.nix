@@ -35,5 +35,6 @@ programs.vscode.profiles.default.userSettings = {
       "cpp" = "g++ -std=c++20 -O2 -Wall $fileName -o $fileNameWithoutExt && time ./$fileNameWithoutExt";
     };
     "code-runner.runInTerminal" = true;
+    "terminal.integrated.fontFamily" = "FiraCode Nerd Font";
   };
 }

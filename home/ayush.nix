@@ -23,7 +23,10 @@
         zoxide
         unzip
 
-	gh
+
+        gh
+
+        fira-code-nerdfont
     ];
 
     programs.git = {
@@ -34,6 +37,6 @@
 
     imports = [
         ./configs/vscode.nix
-        ./configs/zsh.nix
+        ./configs/zsh/zsh.nix
     ];
 }
