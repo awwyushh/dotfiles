@@ -6,18 +6,16 @@
 
     home.stateVersion = "24.11";
 
-    programs.zsh.enable = true;
-
     home.packages = with pkgs; [
         neovim
         firefox
         google-chrome
         vscode
 
-        clang
+        gcc
         gdb
         ninja
-	gnumake
+        gnumake
 
         ripgrep
         fd
@@ -36,5 +34,6 @@
 
     imports = [
         ./configs/vscode.nix
+        ./configs/zsh.nix
     ];
 }

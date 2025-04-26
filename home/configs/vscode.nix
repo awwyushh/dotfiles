@@ -1,7 +1,11 @@
 { config, pkgs, ... }:
 
 {
+
+programs.vscode.enable = true;
   # Install VSCode extensions
+
+
 programs.vscode.profiles.default.extensions = with pkgs.vscode-extensions; [
     ms-vscode.cpptools              # Microsoft C++ IntelliSense
     ms-vscode.cmake-tools            # CMake integration
